@@ -13,11 +13,11 @@ function setup() {
     frameRate(5);
     
     circleDiameter = width/NUM_CIRCLES;
-    circleRadius = circleDiameter/2;
+    circleRadius = circleDiameter/15;
     
-    rVal = 255;
-    gVal = 0;
-    bVal = 0;
+    rVal = 150;
+    gVal = 130;
+    bVal = 240;
 }
 
 function draw() {
@@ -31,22 +31,22 @@ function draw() {
     if (isShifted) {
         x = circleRadius;
     } else {
-       x = 0; 
+       x = 8; 
     }
     
     while (x <= width) {
         fill(color(rVal,gVal,bVal));
         stroke(color(rVal,gVal,bVal));
-      ellipse(x, y, circleDiameter, circleDiameter);
+        ellipse(x, y, circleDiameter, circleDiameter);
       x = x + circleDiameter;
     }
 
     y = y - circleRadius;
     isShifted = !isShifted;
     
-    rVal = (rVal + 254) % 256;
-    gVal = (gVal + 7) % 256;
-    bVal = (bVal + 3) % 256;
+    rVal = (rVal + 100) % 256;
+    gVal = (gVal + 10) % 256;
+    bVal = (bVal + 15) % 256;
   }
 }
 function keyPressed() {

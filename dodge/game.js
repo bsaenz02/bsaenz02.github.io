@@ -18,7 +18,7 @@ function setup() {
     player.addImage(playerImage);
     enemy = createSprite(width/2, 0, 0, 0);
     enemy.addImage(enemyImage);
-    enemy.roatationSpeed = 8.0;
+    enemy.rotationSpeed = 4.0;
 }
 
 function draw() {

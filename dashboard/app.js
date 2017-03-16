@@ -11,7 +11,7 @@ function loadDate() {
 function loadWeather() {
     var weather = $("#weather");
     var url = "https://api.forecast.io/forecast/";
-    var apiKey = "625029e5109a40bbbb970140ba3c9fac";
+    var apiKey = "dfa46066c92f372ffa4b72ba81d21c39";
 
 function success(position) {
     var latitude = position.coords.latitude;
